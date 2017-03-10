@@ -1,9 +1,0 @@
-Project Notes:
-
-Dataebase: 
-
-4 Tables:
-	Products
-	Categories
-	Orders
-	Users 
