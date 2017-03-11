@@ -52,12 +52,12 @@ body {
 
 .game-price {
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
     right: 15px;
     background: #3b7e14;
     color: white;
-    padding: 5px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .game-add {
@@ -83,4 +83,14 @@ body {
     padding-top: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+
+/*qty box in add to cart*/
+
+.qty {
+    margin-bottom: 20px;
+    width: 40px;
+    color: #666 !important;
+    text-align: center;
 }
