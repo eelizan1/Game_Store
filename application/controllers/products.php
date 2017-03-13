@@ -21,6 +21,17 @@ class Products extends CI_Controller{
        // load main layout view 
        $this->load->view('/layouts/main', $data); 
     }
+    
+    public function details($id){
+        
+        // get product details from the model 
+        $data['product'] = $this->Product_model->get_product_details($id); 
+        
+        // load the view 
+        $data['main_content'] = 'details'; 
+        $this->load->view('/layouts/main', $data); 
+        
+    }
 }
     
 ?>

@@ -19,7 +19,7 @@
     <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-<link href="<?php echo base_url();?>assets/css/custom.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/custom.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
@@ -43,12 +43,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">The Gaming Place</a>
+                <a class="navbar-brand" href="<?php echo base_url();?>">The Gaming Place</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="register.html">Create Account</a></li>
+                    <li class="active"><a href="<?php echo base_url();?>index.php">Home</a></li>
+                    <li><a href="<?php echo base_url();?>user/register">Create Account</a></li>
 
                 </ul>
                 <form class="navbar-form navbar-right">
