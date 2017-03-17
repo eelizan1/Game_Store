@@ -32,6 +32,8 @@ class Products extends CI_Controller{
         $this->load->view('/layouts/main', $data); 
         
     }
+    
+    
 }
     
 ?>

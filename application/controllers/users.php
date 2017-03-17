@@ -81,5 +81,20 @@ class Users extends CI_Controller{
         redirect('products');
 	}
     
-    
+    public function account(){
+        
+       
+       
+              $user_id = $this->session->userdata('user_id'); 
+//        'accounts' is the key
+        $data['account'] = $this->User_model->get_db_customer_info($user_id);
+         $data['order'] = $this->User_model->get_db_customer_order($user_id);
+       
+
+        
+          $data['main_content'] = 'accounts'; //--> load account view 
+            $this->load->view('layouts/main', $data); 
+          
+    }
+       
 }

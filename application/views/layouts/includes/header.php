@@ -52,7 +52,12 @@
                     <?php if(!$this->session->userdata('logged_in')) : ?>
 
                         <li><a href="<?php echo base_url();?>users/register">Create Account</a></li>
+
+
                         <?php endif; ?>
+                            <?php if($this->session->userdata('logged_in')) : ?>
+                                <li><a href="<?php echo base_url();?>users/account">Account</a></li>
+                                <?php endif; ?>
 
                 </ul>
 

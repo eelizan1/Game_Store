@@ -24,4 +24,30 @@ class User_model extends CI_Model{
             return false;
         }
     }
+    
+    public function get_db_customer_info($user_id) {
+        
+        $this->db->select('*'); 
+        $this->db->from('users'); 
+        $this->db->where('id', $user_id);
+        $query = $this->db->get();
+        
+        // returns the result row
+        // it is 'row()' since its a single product 
+        return $query->row(); 
+    }
+    
+    public function get_db_customer_order($user_id) {
+        
+        $this->db->select('*'); 
+        $this->db->from('orders'); 
+        $this->db->where('user_id', $user_id);
+        $query = $this->db->get();
+        
+        // returns the result row
+        // it is 'row()' since its a single product 
+        return $query->row(); 
+    }
+    
+    
 }
